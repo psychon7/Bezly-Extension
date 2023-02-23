@@ -10,7 +10,7 @@ import firebase_admin
 from firebase_admin import db
 import time
 
-from main import getdata, num_tokens_from_string
+from functions import getdata, num_tokens_from_string
 
 openai.api_key = "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"
 
