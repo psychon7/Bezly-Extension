@@ -55,7 +55,7 @@ function GetAIResponse(website, name, ASIN, token)
 {
     const data = { website: website, name: name, asin: ASIN, token: token};
 
-    fetch("http://localhost:5000/getAIResponse", {
+    fetch("http://api.bezly.xyz/getAIResponse", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

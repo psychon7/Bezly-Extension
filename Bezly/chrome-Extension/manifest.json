@@ -10,11 +10,25 @@
     "background": {
         "service_worker": "./js/main.js"
       },
+      "icons": {
+        "16": "imgs/16x16.png",
+        "32": "imgs/32x32.png",
+        "48": "imgs/48x48.png",
+        "128": "imgs/128x128.png"
+      },
+      "browser_action": {
+        "default_icon": {
+          "16": "imgs/16x16.png",
+          "32": "imgs/32x32.png",
+          "48": "imgs/48x48.png",
+          "128": "imgs/128x128.png"
+        }
+      },
     "permissions": [
         "storage",
         "tabs",
         "activeTab",
-        "http://apt.bezly.xyz/*",
+        "http://api.bezly.xyz/*",
         "https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"
     ],"content_scripts": [
         {
