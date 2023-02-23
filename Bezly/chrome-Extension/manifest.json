@@ -1,0 +1,25 @@
+{
+    "name": "Bezly",
+    "version":"0.0.1",
+    "description": "This is a review summarizer extension which will give you a shot and clean review of your amazon product",
+    "action":{
+        "default_title":"Bezly | World's No.1 Summarizer",
+        "default_popup":"index.html"
+    },
+    "manifest_version":3,
+    "background": {
+        "service_worker": "./js/main.js"
+      },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "http://localhost:5000/*",
+        "https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"
+    ],"content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["./js/content.js"]
+        }
+      ]
+}
