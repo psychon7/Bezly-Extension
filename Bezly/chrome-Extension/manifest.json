@@ -1,7 +1,7 @@
 {
     "name": "Bezly",
     "version":"0.0.1",
-    "description": "This is a review summarizer extension which will give you a shot and clean review of your amazon product",
+    "description": "This is a review summarizer extension which will give you a shot and clean summary of review of any amazon product",
     "action":{
         "default_title":"Bezly | The Ultimate Amazon Review Summarizer",
         "default_popup":"index.html"
