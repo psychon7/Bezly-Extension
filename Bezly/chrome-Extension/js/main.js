@@ -48,14 +48,14 @@ window.onload = function(){
     });
 
     var element = document.getElementById("opaci");
-    element.style.opacity = 0.5;
+    element.style.opacity = 1;
 }
 
 function GetAIResponse(website, name, ASIN, token)
 {
     const data = { website: website, name: name, asin: ASIN, token: token};
 
-    fetch("http://api.bezly.xyz/getAIResponse", {
+    fetch("http://localhost:5000/getAIResponse", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ function Getredits(token)
 {
     const data = {token: token};
 
-    fetch("http://api.bezly.xyz/getCredits", {
+    fetch("http://localhost:5000/getCredits", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

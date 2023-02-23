@@ -56,7 +56,7 @@ function LoginWithEmailAndPassword(email, password)
         timer: 3000
       });
     const data = { email: email, password: password};
-    fetch("http://api.bezly.xyz/login", {
+    fetch("http://localhost:5000/login", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
