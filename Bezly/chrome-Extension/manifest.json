@@ -14,7 +14,7 @@
         "storage",
         "tabs",
         "activeTab",
-        "http://localhost:5000/*",
+        "http://localhost:80/*",
         "https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"
     ],"content_scripts": [
         {

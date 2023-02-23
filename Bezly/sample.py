@@ -12,7 +12,7 @@ import time
 
 from functions import getdata, num_tokens_from_string
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 CORS(app)
@@ -233,7 +233,6 @@ def mainFunction():
 def getCredits():
     data = request.get_json()
     token = data['token']
-
     uid = extract_user_id(token)
     user_data = root_ref.child('users').child(uid).get()
 
