@@ -109,7 +109,7 @@ function Getredits(token)
 {
     const data = {token: token};
 
-    fetch("http://localhost:5000/getCredits", {
+    fetch("http://api.bezly.xyz/getCredits", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

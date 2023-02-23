@@ -56,7 +56,7 @@ function RegisterWithEmailPassword(email, password)
         timer: 3000
       });
     const data = { email: email, password: password};
-    fetch("http://localhost:5000/register", {
+    fetch("http://api.bezly.xyz/register", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
